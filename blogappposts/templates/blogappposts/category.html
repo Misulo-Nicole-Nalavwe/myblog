@@ -14,7 +14,7 @@
                             <div class = "content is-medium">
                                 <a href="{%url 'detail' post.category.slug post.slug %}">
                                 <h2 class = "subtitle is-4">{{ post.created_at|date:'D, M-d-y'}}</h2>
-                                <h1>{{ post.title }}</h1>
+                                <h2>{{ post.title }}</h2>
                                    <p>{{post.intro}}</p>
                             </div>
                         {% empty%}

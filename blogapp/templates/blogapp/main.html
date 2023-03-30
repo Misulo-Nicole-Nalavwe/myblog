@@ -5,16 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>{% block title%}{% endblock%}Blog</title>
+    <title>{% block title%}{%endblock%} | Home </title>
 
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.2/css/bulma.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
         nav.navbar {
+            background-color:aquamarine;
             height: 6rem !important;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
         }
+        body{
+            background-color:#EFEFEF;
+        }
+        .footer {
+            background: #444444;
+            height: 100px;
+            font-family: 'Open Sans', sans-serif;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+    
     </style>
 
 </head>
@@ -24,7 +36,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                    <strong>Blog</strong>
+                    <img scr="./logo.jpg" alt="Blog">
                 </a>
                 <span class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
@@ -34,6 +46,7 @@
             </div>
 
             <div id="navbarMenu" class="navbar-menu">
+            
                 <div class="navbar-end">
                     <div class="navbar-item">
                        <form method="get" action="{% url 'search' %}"> 
@@ -46,10 +59,10 @@
                         </form>
                     </div> 
 
-                    <a href="/" class="navbar-item is-active is-size-5 has-text-weight-semibold">
+                    <a href="/" class="navbar-item is-active is-size-6 has-text-weight-semibold">
                         Home
                     </a>
-                    <a href="{% url 'about' %}" class="navbar-item is-size-5 has-text-weight-semibold">
+                    <a href="{% url 'about' %}" class="navbar-item is-size-6 has-text-weight-semibold">
                         About
                     </a>
                 </div>
