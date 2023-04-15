@@ -8,12 +8,12 @@
         <div class="container">
             <section class="section">
                 <div class="columns">
-                    <div class="column is-8 is-offset-2">
+                    <div class="column is-10 is-offset-1">
                             <div class = "content is-medium">
                                 <h2 class = "subtitle is-4">{{ post.created_at|date:'D, M-d-y'}}</h2>
-                                <h1>{{ post.title }}</h1>
-                                   <p><strong>{{post.intro}}</strong></p>
-                                   <p> {{post.body}}</p>
+                                <h2>{{ post.title }}</h2>
+                                   <p style="text-align: justify;"><strong>{{post.intro}}</strong></p>
+                                   <p style="text-align: justify;"> {{post.body}}</p>
 
                                    <p><small>Category: <a href="{%url 'category' post.category.slug%}">{{post.category}}</a></small></p>
 
