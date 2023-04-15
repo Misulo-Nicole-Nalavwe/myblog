@@ -18,8 +18,8 @@
                                         <img src ="{{ post.image.url}}">
                                     {% endif %}
                                     </figure>
-                                <h2 class = "subtitle is-4">{{ post.created_at|date:'D, M-d-y'}}</h2>
-                                <h1>{{ post.title }}</h1>
+                                <h2 class = "subtitle is-5">{{ post.created_at|date:'D, M-d-y'}}</h2>
+                                <h1 class = "title is-3">{{ post.title }}</h1>
                                    <p>{{post.intro}}</p>
                             </div>
                         {% endfor %}

@@ -10,11 +10,12 @@ def detail(request, category_slug, slug):
 
     if request.method == 'post':
         form = CommentForm(request.post)
-
+        
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = post
             comment.save()
+            
 
             return redirect('detail', slug=slug)
     else:

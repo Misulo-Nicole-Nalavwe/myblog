@@ -26,6 +26,19 @@
             color: #FFFFFF;
             padding: 20px;
         }
+       .navbarmenu {
+        display: flex;
+        }
+        .navbar-logo{
+            color: maroon;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-stretch: wider;
+            font-style: normal;
+            display: flex;
+            padding-top: 30px;
+            font-size: x-large;
+        }
     
     </style>
 
@@ -35,8 +48,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img scr="./logo.jpg" alt="Blog">
+                <a class="navbar-logo" href="/">
+                    <h2>MOTIVATION</h2>
                 </a>
                 <span class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
@@ -46,7 +59,7 @@
             </div>
 
             <div id="navbarMenu" class="navbar-menu">
-            
+                
                 <div class="navbar-end">
                     <div class="navbar-item">
                        <form method="get" action="{% url 'search' %}"> 
